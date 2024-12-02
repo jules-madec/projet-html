@@ -1,19 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="asset/style.css">
-    <title>Document</title>
+    <title>Evasion et découverte</title>
 </head>
 <body>
-   <!-- debut partie de jules -->
-    <!-- fin partie de jules -->
-    <!-- debut partie de candice -->
-    <!-- fin partie de candice -->
-    <!-- debut partie de baptiste -->
-    <!-- fin partie de baptiste -->
-    <!-- debut de partie de maud -->
-    <!-- fin de partie de maud -->
+    <header>
+        <img src="assets/img/logo.svg" alt="logo de Evasion et découverte">
+        <img src="assets/img/menu burger.svg" alt="menu burger" onclick="toggler()" id="toggler">
+        <nav>
+            <ul>
+                <li>Nos destinations phares</li>
+                <li>Galerie photo</li>
+                <li>Demande de devis</li>
+                <li>Témoignages clients</li>
+                <li>Contacts</li>
+            </ul>
+        </nav>
+        <img src="assets/img/image d'accueil.svg" alt="paysage avec slogan">
+    </header>
+    <main>
+        <section id="destinations">
+            <h1>Nos destinations phares</h1>
+            <div>
+                <img src="assets/img/canada.svg" alt="paysage canada">
+                <p>canada</p>
+                <p>Plonge au cœur du Canada, entre nature sauvage et diversité culturelle pour une aventure authentique
+                    et enrichissante.</p>
+                <div>
+                    <p>14 jours/ 13 nuits</p>
+                    <p>à partir de <br> 2400€</p>
+                </div>
+            </div>
+            <div>
+                <img src="assets/img/grèce.svg" alt="grèce paysage">
+                <p>Grèce</p>
+                <p>Plonge dans l’histoire, détends toi sur des plages d’un bleu cristallin et laisse toi envoûter par la
+                    magie de ce pays aux mille couleurs et saveurs.</p>
+                <div>
+                    <p>7 jours/ 6 nuits</p>
+                    <p>à partir de <br> 1200€</p>
+                </div>
+            </div>
+            <div>
+                <img src="assets/img/maldives.svg" alt="maldives paysage">
+                <p>Maldives</p>
+                <p>Plonge aux cœurs des Maldives, entre plages de sable blanc, eaux cristallines et douceur de vivre
+                    pour une escapade paradisiaque inoubliable.</p>
+                <div>
+                    <p>8 jours/ 7 nuits</p>
+                    <p>à partir de <br> 2000€</p>
+                </div>
+            </div>
+        </section>
+        <section id="photoGallery">
+            <h2>Galerie photo</h2>
+            <div>
+                <img src="assets/img/galerie img 1.svg" alt="paysage">
+                <img src="assets/img/galerie img 2.svg" alt="paysage">
+                <img src="assets/img/galerie img 3.svg" alt="paysage">
+                <img src="assets/img/galerie img 4.svg" alt="paysage">
+                <img src="assets/img/galerie img 5.svg" alt="paysage">
+                <img src="assets/img/galerie img 6.svg" alt="paysage">
+            </div>
+        </section>
+        <section id="estimate">
+            <h2>Demande de devis</h2>
+            <label for="name">Prénom</label>
+            <input type="text">
+            <label for="lastname">Nom</label>
+            <input type="text">
+            <label for="destination">Destination</label>
+            <select name="country" id="country">
+                <option value="1">Canada</option>
+                <option value="2">Grèce</option>
+                <option value="3">Maldives</option>
+                <option value="4">Italie</option>
+                <option value="5">Los Angeles</option>
+                <option value="6">Espagne</option>
+            </select>
+            <label for="date">Dates</label>
+            <input type="text">
+            <label for="price">Budget</label>
+            <select name="price" id="price">
+                <option value="1">- de 1000€</option>
+                <option value="2">entre 1000€ et 2000€</option>
+                <option value="3">+ de 2000€</option>
+            </select>
+            <button>Envoyer</button>
+        </section>
+        <section id="notice">
+            <h2>Témoignages clients</h2>
+            <div>
+                <div id="catherine">
+                    <img src="assets/img/pp catherine bouquet.svg" alt="photo de profil">
+                    <p>Catherine Bouquet</p>
+                </div>
+                <img src="assets/img/note catherine.svg" alt="note">
+                <p><strong>Destination:</strong> Canada</p>
+                <p>Cette agence de voyage a vraiment bien organisé mon voyage au Canada. J'ai été impressionnée par la
+                    qualité des services proposés, l'efficacité de l'organisation, et la personnalisation de
+                    l'expérience. J'ai particulièrement apprécié la découverte des paysages majestueux des Rocheuses
+                    canadiennes. Je recommande vivement cette agence pour des voyages inoubliables!</p>
+                <p>publié le 14 Août 2024</p>
+            </div>
+            <div>
+                <div id="jeanne">
+                    <img src="assets/img/pp jeanne girard.svg" alt="photo de profil">
+                    <p>Jeanne Girard</p>
+                </div>
+                <img src="assets/img/note Jeanne.svg" alt="note">
+                <p><strong>Destination:</strong> Grèce</p>
+                <p>Agence à l’écoute de vos attentes pour organiser au mieux votre voyage, des conseils utiles et
+                    des
+                    offres attractives sur les forfaits vacances. J’ai apprécié la qualités des hébergements
+                    proposés et
+                    la diversité des activités incluses dans le forfait. De plus, l’agence et facilement joignable
+                    en
+                    cas de problème. Je recommande vivement.</p>
+                <p>publié le 28 Mai 2024</p>
+            </div>
+            <div>
+                <div id="thibault">
+                    <img src="assets/img/pp thibault delacourt.svg" alt="photo de profil">
+                    <p>Thibault Delacourt</p>
+                </div>
+                <img src="assets/img/note Thibault.svg" alt="note">
+                <p><strong>Destination:</strong> Maldives</p>
+                <p>Un bon rapport qualité-prix et un service client satisfaisant. J’ai apprécie la variété des
+                    destinations proposées et la facilité de réservation des voyages. Cependant, l’agence à
+                    rencontrer
+                    des retards dans la communication des détails du voyage, ce qui a été un peu frustrant pour ma
+                    part
+                    mais dans l’ensemble, l’expérience de voyage reste positive.</p>
+                <p>publié le 30 Juillet 2022</p>
+            </div>
+        </section>
+        <footer id="contacts">
+            <p id="contactsP">Contacts</p>
+            <div>
+                <img src="assets/img/horraire.svg" alt="picto horloge">
+                <p>Du lundi au vendredi (8h-18h)</p>
+                <img src="assets/img/email.svg" alt="picto mail">
+                <p>Evasionetdecouverte@gmail.com</p>
+            </div>
+            <div>
+                <img src="assets/img/adresse.svg" alt="picto adresse">
+                <p>25 rue des yvelines, 75116, Paris</p>
+                <img src="assets/img/telephone.svg" alt="picto telephone">
+                <p>06.58.03.56.60</p>
+            </div>
+            <div>
+                <p>Suivez-nous:</p>
+                <div>
+                    <img src="assets/img/instagram.svg" alt="logo instagram">
+                    <img src="assets/img/facebook.svg" alt="logo facebook">
+                    <img src="assets/img/tik tok.svg" alt="logo tiktok">
+                    <img src="assets/img/youtube.svg" alt="logo youtube">
+                </div>
+                <hr>
+                <p>• Crédits</p>
+                <p>• Mentions légales</p>
+            </div>
+        </footer>
+    </main>
+   
 </body>
 </html>
