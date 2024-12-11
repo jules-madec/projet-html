@@ -1,79 +1,153 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="asset/style.css">
+    <!--Ajout du lien de la feuille de style-->
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Evasion et découverte</title>
 </head>
+
 <body>
     <header>
+        <!--Ajout du logo de l'agence-->
         <img src="assets/img/logo.svg" alt="logo de Evasion et découverte">
-        <img src="assets/img/menu burger.svg" alt="menu burger" onclick="toggler()" id="toggler">
+        <!--Menu burger-->
+        <img src="assets/img/menu_burger.svg" alt="menu burger" onclick="toggler()" id="toggler">
+        <!--Barre de navigation-->
         <nav>
             <ul>
-                <li>Nos destinations phares</li>
-                <li>Galerie photo</li>
-                <li>Demande de devis</li>
-                <li>Témoignages clients</li>
-                <li>Contacts</li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#destinations">Nos destinations phares</a></li>
+                <li><a href="#photoGallery">Galerie photo</a></li>
+                <li><a href="#estimate">Demande de devis</a></li>
+                <li><a href="#notice">Témoignages clients</a></li>
+                <li><a href="#contacts">Contacts</a></li>
             </ul>
         </nav>
-        <img src="assets/img/image d'accueil.svg" alt="paysage avec slogan">
+        <!--Ajout de l'image d'accueil.-->
+        <img src="assets/img/image_d'accueil.svg" alt="paysage avec slogan">
     </header>
     <main>
-        <section id="destinations">
+        <!--Catégorie 1: destinations phares.-->
+        <div class="title">
             <h1>Nos destinations phares</h1>
-            <div>
-                <img src="assets/img/canada.svg" alt="paysage canada">
-                <p>canada</p>
-                <p>Plonge au cœur du Canada, entre nature sauvage et diversité culturelle pour une aventure authentique
-                    et enrichissante.</p>
-                <div>
+        </div>
+        <!--Première card pour le Canada.-->
+        <section id="destinations">
+            <div class="card">
+                <div class="image">
+                    <img src="assets/img/canada.jpg" alt="paysage canada">
+                    <div class="slider">
+                        <!--Ajout des images pour le carroussel.-->
+                        <img src="assets/img/canada2.jpeg" alt="paysage canada">
+                        <img src="assets/img/canada3.webp" alt="paysage canada">
+                        <img src="assets/img/canada4.webp" alt="paysage canada">
+                        <img src="assets/img/canada.jpg" alt="paysage canada">
+                    </div>
+                </div>
+                <div class="text1">
+                    <!--Nom de la destination-->
+                    <p><strong>Canada</strong></p>
+                    <!--description-->
+                    <p>Plonge au cœur du Canada, entre nature sauvage et diversité culturelle pour une aventure
+                        authentique et enrichissante.</p>
+                </div>
+                <div class="text2">
+                    <!--durée du séjour-->
                     <p>14 jours/ 13 nuits</p>
-                    <p>à partir de <br> 2400€</p>
+                    <div>
+                        <!--Prix du séjour-->
+                        <p>à partir de</p>
+                        <p>2400€</p>
+                    </div>
                 </div>
             </div>
-            <div>
-                <img src="assets/img/grèce.svg" alt="grèce paysage">
-                <p>Grèce</p>
-                <p>Plonge dans l’histoire, détends toi sur des plages d’un bleu cristallin et laisse toi envoûter par la
-                    magie de ce pays aux mille couleurs et saveurs.</p>
-                <div>
+            <!--Deuxième card pour la Grèce.-->
+            <div class="card">
+                <div class="image">
+                    <img src="assets/img/grece.jpg" alt="grèce paysage">
+                    <div class="slider">
+                        <!--Ajout des images pour le carroussel-->
+                        <img src="assets/img/grece2.webp" alt="grèce paysage">
+                        <img src="assets/img/grece3.jpg" alt="grèce paysage">
+                        <img src="assets/img/grece4.webp" alt="grèce paysage">
+                        <img src="assets/img/grece.jpg" alt="grèce paysage">
+                    </div>
+                </div>
+                <div class="text1">
+                    <!--Nom de la destination-->
+                    <p><strong>Grèce</strong></p>
+                    <!--description-->
+                    <p>Plonge dans l’histoire, détends toi sur des plages d’un bleu cristallin et laisse toi envoûter
+                        par la magie de ce pays aux mille couleurs et saveurs.</p>
+                </div>
+                <div class="text2">
+                    <!--durée du séjour-->
                     <p>7 jours/ 6 nuits</p>
-                    <p>à partir de <br> 1200€</p>
+                    <div>
+                        <!--Prix du séjour-->
+                        <p>à partir de</p>
+                        <p>1200€</p>
+                    </div>
                 </div>
             </div>
-            <div>
-                <img src="assets/img/maldives.svg" alt="maldives paysage">
-                <p>Maldives</p>
-                <p>Plonge aux cœurs des Maldives, entre plages de sable blanc, eaux cristallines et douceur de vivre
-                    pour une escapade paradisiaque inoubliable.</p>
-                <div>
+            <!--Troisième card pour les Maldives-->
+            <div class="card">
+                <div class="image">
+                    <img src="assets/img/maldives.jpeg" alt="maldives paysage">
+                    <div class="slider">
+                        <!--Ajout des images pour le carroussel-->
+                        <img src="assets/img/maldives2.jpg" alt="maldives paysage">
+                        <img src="assets/img/maldives3.jpg" alt="maldives paysage">
+                        <img src="assets/img/maldives4.jpg" alt="maldives paysage">
+                        <img src="assets/img/maldives.jpeg" alt="maldives paysage">
+                    </div>
+                </div>
+                <div class="text1">
+                    <!--Nom de la destination-->
+                    <p><strong>Maldives</strong></p>
+                    <!--description-->
+                    <p>Plonge aux cœurs des Maldives, entre plages de sable blanc, eaux cristallines et douceur de vivre
+                        pour une escapade paradisiaque inoubliable.</p>
+                </div>
+                <div class="text2">
+                    <!--durée du séjour-->
                     <p>8 jours/ 7 nuits</p>
-                    <p>à partir de <br> 2000€</p>
+                    <div>
+                        <!--Prix du séjour-->
+                        <p>à partir de</p>
+                        <p>2000€</p>
+                    </div>
                 </div>
             </div>
         </section>
+        <!--Catégorie 2: la galerie photo-->
         <section id="photoGallery">
             <h2>Galerie photo</h2>
             <div>
-                <img src="assets/img/galerie img 1.svg" alt="paysage">
-                <img src="assets/img/galerie img 2.svg" alt="paysage">
-                <img src="assets/img/galerie img 3.svg" alt="paysage">
-                <img src="assets/img/galerie img 4.svg" alt="paysage">
-                <img src="assets/img/galerie img 5.svg" alt="paysage">
-                <img src="assets/img/galerie img 6.svg" alt="paysage">
+                <!--Ajout des photos pour la galerie photo.-->
+                <img src="assets/img/galerie_img_1.svg" alt="paysage">
+                <img src="assets/img/galerie_img_2.svg" alt="paysage">
+                <img src="assets/img/galerie_img_3.svg" alt="paysage">
+                <img src="assets/img/galerie_img_4.svg" alt="paysage">
+                <img src="assets/img/galerie_img_5.svg" alt="paysage">
+                <img src="assets/img/galerie_img_6.svg" alt="paysage">
             </div>
         </section>
+        <!--Catégorie 3: La demande de devis-->
         <section id="estimate">
             <h2>Demande de devis</h2>
             <label for="name">Prénom</label>
-            <input type="text">
+            <input type="text" required="required" name="name" id="name" minlength="2" maxlength="15"
+                placeholder="Lucas">
             <label for="lastname">Nom</label>
-            <input type="text">
+            <input type="text" required="required" name="lastname" id="lastname" minlength="2" maxlength="20"
+                placeholder="Leroy">
+            <!--Destinations sous forme de selection à choix multiples-->
             <label for="destination">Destination</label>
-            <select name="country" id="country">
+            <select name="destination" id="destination">
                 <option value="1">Canada</option>
                 <option value="2">Grèce</option>
                 <option value="3">Maldives</option>
@@ -82,90 +156,126 @@
                 <option value="6">Espagne</option>
             </select>
             <label for="date">Dates</label>
-            <input type="text">
+            <input type="text" name="date" id="date">
+            <!--Budget sous forme de selection à choix multiples-->
             <label for="price">Budget</label>
             <select name="price" id="price">
                 <option value="1">- de 1000€</option>
                 <option value="2">entre 1000€ et 2000€</option>
-                <option value="3">+ de 2000€</option>
+                <option value="3">entre 2000€ et 3000€</option>
+                <option value="4">+ de 3000€</option>
             </select>
+            <!--Bouton pour envoyer le formulaire-->
             <button>Envoyer</button>
         </section>
+        <!--Catégorie 4: les témoignages clients-->
         <section id="notice">
             <h2>Témoignages clients</h2>
             <div>
+                <!--Premier client: Catherine Bouquet-->
                 <div id="catherine">
-                    <img src="assets/img/pp catherine bouquet.svg" alt="photo de profil">
+                    <!--Photo de profil-->
+                    <img src="assets/img/pp_catherine_bouquet.svg" alt="photo de profil">
+                    <!--Prénom,Nom-->
                     <p>Catherine Bouquet</p>
                 </div>
-                <img src="assets/img/note catherine.svg" alt="note">
+                <!--Note-->
+                <img src="assets/img/note_catherine.svg" alt="note">
+                <!--destination-->
                 <p><strong>Destination:</strong> Canada</p>
+                <!--commentaire-->
                 <p>Cette agence de voyage a vraiment bien organisé mon voyage au Canada. J'ai été impressionnée par la
                     qualité des services proposés, l'efficacité de l'organisation, et la personnalisation de
                     l'expérience. J'ai particulièrement apprécié la découverte des paysages majestueux des Rocheuses
                     canadiennes. Je recommande vivement cette agence pour des voyages inoubliables!</p>
+                <!--date de publication-->
                 <p>publié le 14 Août 2024</p>
             </div>
             <div>
+                <!--Deuxième client: Jeanne Girard-->
                 <div id="jeanne">
-                    <img src="assets/img/pp jeanne girard.svg" alt="photo de profil">
+                    <!--Photo de profil-->
+                    <img src="assets/img/pp_jeanne_girard.svg" alt="photo de profil">
+                    <!--Prénom,Nom-->
                     <p>Jeanne Girard</p>
                 </div>
-                <img src="assets/img/note Jeanne.svg" alt="note">
+                <!--Note-->
+                <img src="assets/img/note_Jeanne.svg" alt="note">
+                <!--destination-->
                 <p><strong>Destination:</strong> Grèce</p>
+                <!--commentaire-->
                 <p>Agence à l’écoute de vos attentes pour organiser au mieux votre voyage, des conseils utiles et
-                    des
-                    offres attractives sur les forfaits vacances. J’ai apprécié la qualités des hébergements
-                    proposés et
-                    la diversité des activités incluses dans le forfait. De plus, l’agence et facilement joignable
-                    en
-                    cas de problème. Je recommande vivement.</p>
+                    des offres attractives sur les forfaits vacances. J’ai apprécié la qualités des hébergements
+                    proposés et la diversité des activités incluses dans le forfait. De plus, l’agence et facilement joignable
+                    en cas de problème. Je recommande vivement.</p>
+                    <!--date de publication-->
                 <p>publié le 28 Mai 2024</p>
             </div>
+            <!--Troisième client: Thibault Delacourt-->
             <div>
                 <div id="thibault">
-                    <img src="assets/img/pp thibault delacourt.svg" alt="photo de profil">
+                    <!--Photo de profil-->
+                    <img src="assets/img/pp_thibault_delacourt.svg" alt="photo de profil">
+                    <!--Prénom,Nom-->
                     <p>Thibault Delacourt</p>
                 </div>
-                <img src="assets/img/note Thibault.svg" alt="note">
+                 <!--Note-->
+                <img src="assets/img/note_Thibault.svg" alt="note">
+                <!--destination-->
                 <p><strong>Destination:</strong> Maldives</p>
+                <!--commentaire-->
                 <p>Un bon rapport qualité-prix et un service client satisfaisant. J’ai apprécie la variété des
                     destinations proposées et la facilité de réservation des voyages. Cependant, l’agence à
-                    rencontrer
-                    des retards dans la communication des détails du voyage, ce qui a été un peu frustrant pour ma
-                    part
-                    mais dans l’ensemble, l’expérience de voyage reste positive.</p>
+                    rencontrer des retards dans la communication des détails du voyage, ce qui a été un peu frustrant pour ma
+                    part mais dans l’ensemble, l’expérience de voyage reste positive.</p>
+                <!--date de publication-->
                 <p>publié le 30 Juillet 2022</p>
             </div>
         </section>
+        <!--Dernière catégorie: contacts-->
         <footer id="contacts">
-            <p id="contactsP">Contacts</p>
-            <div>
-                <img src="assets/img/horraire.svg" alt="picto horloge">
-                <p>Du lundi au vendredi (8h-18h)</p>
-                <img src="assets/img/email.svg" alt="picto mail">
-                <p>Evasionetdecouverte@gmail.com</p>
-            </div>
-            <div>
-                <img src="assets/img/adresse.svg" alt="picto adresse">
-                <p>25 rue des yvelines, 75116, Paris</p>
-                <img src="assets/img/telephone.svg" alt="picto telephone">
-                <p>06.58.03.56.60</p>
-            </div>
-            <div>
-                <p>Suivez-nous:</p>
+            <h2>Contacts</h2>
+            <div id="joindre">
                 <div>
+                    <!--Horraires d'ouverture-->
+                    <img src="assets/img/horraire.svg" alt="picto horloge">
+                    <p>Du lundi au vendredi (8h-18h)</p>
+                </div>
+                <div>
+                    <!--Adresse mail-->
+                    <img src="assets/img/email.svg" alt="picto mail">
+                    <p><a href="mailto:Evasionetdecouverte@gmail.com">Evasionetdecouverte@gmail.com</a></p>
+                </div>
+                <div>
+                    <!--Adresse de l'agence-->
+                    <img src="assets/img/adresse.svg" alt="picto adresse">
+                    <p>25 rue des yvelines, 75116, Paris</p>
+                </div>
+                <div>
+                    <!--Numéro de téléphone de l'agence-->
+                    <img src="assets/img/telephone.svg" alt="picto telephone">
+                    <p><a href="telto:0768802696">06.58.03.56.60</a></p>
+                </div>
+            </div>
+            <div id="media">
+                <!--Réseaux sociaux de l'agence-->
+                <p>Suivez-nous:</p>
+                <div id="socialpicto">
                     <img src="assets/img/instagram.svg" alt="logo instagram">
                     <img src="assets/img/facebook.svg" alt="logo facebook">
-                    <img src="assets/img/tik tok.svg" alt="logo tiktok">
+                    <img src="assets/img/tik_tok.svg" alt="logo tiktok">
                     <img src="assets/img/youtube.svg" alt="logo youtube">
                 </div>
                 <hr>
-                <p>• Crédits</p>
-                <p>• Mentions légales</p>
+                <!--Crédits et mentions légales-->
+                <div id="legal">
+                    <p>• Crédits</p>
+                    <p>• Mentions légales</p>
+                </div>
             </div>
         </footer>
     </main>
-   
+
 </body>
+
 </html>
